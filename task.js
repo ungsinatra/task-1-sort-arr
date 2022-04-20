@@ -1,6 +1,11 @@
-
-function solution(nums){
-	return (nums ==null)?[]:nums =nums.sort((a,b) =>a-b)
-	
+function solution(nums) {
+  if (nums == null) {
+    return [];
+  } else {
+    nums = nums.sort((a, b) => {
+      return a - b;
+    });
   }
-  console.log(solution([6,2,4,5]))
+  return nums;
+}
+console.log(solution([6, 2, 4, 5]));
